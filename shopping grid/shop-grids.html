@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .inputs input{
+            margin-bottom: 10px;
+        }
+
+        label{
+            margin-bottom: 10px;
+        }
+
+        .updbtn{
+            background-color: orangered;
+            border: none;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .deletbtn{
+            background-color: orangered;
+            border: none;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            margin-left: 45%;
+        }
+
+        .update{
+            display: none;
+        }
+
+    </style>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Landrick - Saas & Software Landing Page Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+        <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+        <meta name="author" content="Shreethemes" />
+        <meta name="email" content="support@shreethemes.in" />
+        <meta name="website" content="https://shreethemes.in" />
+        <meta name="Version" content="v3.2.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/tiny-slider.css"/> 
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Main Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        <link rel="" href="shop-product-detail.html">
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar STart -->
+  
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title"> All Products </h4>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item active" aria-current="page">Product</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+    
+        <!-- Hero End -->
+
+        <!-- Start Products -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12">
+                        <div class="card border-0 sidebar sticky-bar">
+                            <div class="card-body p-0">
+                                <!-- SEARCH -->
+                            
+                                <!-- SEARCH -->
+
+                                <!--ADD PRODUCTS-->
+                                <form id="createForm" class="create" enctype="multipart/form-data">
+                                    <div class="inputs">
+                                        <h5 class="widget-title">Add a product</h5>
+                                        <input name="name" id="name1" type="text" class="form-control ps-5" placeholder=" Name :" required>
+                                        <input name="name" id="price1" type="text" class="form-control ps-5" placeholder="Price :" required>
+                                        <input name="name" id="discount1" type="text" class="form-control ps-5" placeholder="Discount :">
+                                        <input name="name" id="image1" type="text" class="form-control ps-5" placeholder="Image :" required>
+                                        <input name="name" id="title1" type="text" class="form-control ps-5" placeholder="title:" required>
+                                    </div>
+                                    <!-- Categories -->
+                                    <div class="widget mt-4 pt-2">
+                                              <label for="">Categories</label>
+                                                   <select class="form-control ps-5" id="cates">
+                                            
+                                                      </select>
+                                        
+                                             <label for="" class="my-2">Clothing</label>
+                                                    <select class="form-control ps-5" id="cloth">
+                                           
+                                                     </select>
+                    
+                                    </div>
+                                    <!-- Categories -->
+    
+                                     <input type="submit" id="addbtn" class="btn btn-primary px-2 my-4" value="Add" />
+                                    <!--ADD PRODUCTS-->
+                                </form>
+
+                                <form id="updateForm" class="update" enctype="multipart/form-data">
+                                    <div class="inputs">
+                                        <h5 class="widget-title">Update product</h5>
+                                        <input type="text" class="" id="formid" hidden>
+                                        <input name="name" id="name2" type="text" class="form-control ps-5  name3" placeholder=" Name :" required>
+                                        <input name="name" id="price2" type="text" class="form-control ps-5 price3" placeholder="Price :" required>
+                                        <input name="name" id="discount2" type="text" class="form-control ps-5 discount3" placeholder="Discount :">
+                                        <input name="name" id="image2" type="text" class="form-control ps-5 image3" placeholder="Image :" required>
+                                        <input name="name" id="title2" type="text" class="form-control ps-5 title3" placeholder="title:" required>
+                                    </div>
+                                    <!-- Categories -->
+                                    <div class="widget mt-4 pt-2">
+                                              <label for="">Categories</label>
+                                                   <select class="form-control ps-5 catess" id="cates1">
+                                            
+                                                      </select>
+                                        
+                                             <label for="" class="my-2">Clothing</label>
+                                                    <select class="form-control ps-5 clothh" id="cloth1">
+                                           
+                                                     </select>
+                    
+                                    </div>
+                                    <!-- Categories -->
+                                     <input type="submit" id="updbtn" class="btn btn-primary px-2 my-4" value="Update" />
+                                    <!--ADD PRODUCTS-->
+                                </form>
+
+                                
+
+                                <!-- color -->
+                                
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-9 col-md-8 col-12 mt-5 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 col-md-7">
+                                <div class="section-title">
+                                    <h5 class="mb-0">Showing 1 result</h5>
+                                </div>
+                            </div><!--end col-->
+        
+                        </div><!--end row-->
+
+                        <div class="row" id="productdata" >
+                            
+                         
+                            
+
+                            <!-- PAGINATION START -->
+                            <div class="col-12 mt-4 pt-2" id="links">
+                                <ul class="pagination justify-content-center mb-0">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous"><i class="mdi mdi-arrow-left"></i> Prev</a></li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next">Next <i class="mdi mdi-arrow-right"></i></a></li>
+                                </ul>
+                            </div><!--end col-->
+                            <!-- PAGINATION END -->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Products -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer">
+                            <img src="images/logo-light.png" height="24" alt="">
+                        </a>
+                        <p class="mt-4">Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Company</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                            <li><a href="page-services.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Services</a></li>
+                            <li><a href="page-team.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Team</a></li>
+                            <li><a href="page-pricing.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Pricing</a></li>
+                            <li><a href="portfolio-modern-three.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Project</a></li>
+                            <li><a href="page-jobs.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Careers</a></li>
+                            <li><a href="page-blog-grid.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                            <li><a href="auth-cover-login.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Login</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Usefull Links</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="page-terms.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
+                            <li><a href="page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
+                            <li><a href="documentation.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Documentation</a></li>
+                            <li><a href="changelog.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Changelog</a></li>
+                            <li><a href="components.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Components</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Newsletter</h5>
+                        <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="foot-subscribe mb-3">
+                                        <label class="form-label">Write your email <span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="mail" class="fea icon-sm icons"></i>
+                                            <input type="email" name="email" id="emailsubscribe" class="form-control ps-5 rounded" placeholder="Your email : " required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-grid">
+                                        <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary" value="Subscribe">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Landrick. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Product View Start -->
+        <div class="modal fade" id="productview" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog  modal-lg modal-dialog-centered">
+                <div class="modal-content rounded shadow border-0">
+                    <div class="modal-header border-bottom">
+                        <h5 class="modal-title" id="productview-title">Branded T-Shirts</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body p-4">
+                        <div class="container-fluid px-0">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="tiny-single-item">
+                                        <div class="tiny-slide"><img src="images/shop/product/single-2.jpg" class="img-fluid rounded" alt=""></div>
+                                        <div class="tiny-slide"><img src="images/shop/product/single-3.jpg" class="img-fluid rounded" alt=""></div>
+                                        <div class="tiny-slide"><img src="images/shop/product/single-4.jpg" class="img-fluid rounded" alt=""></div>
+                                        <div class="tiny-slide"><img src="images/shop/product/single-5.jpg" class="img-fluid rounded" alt=""></div>
+                                        <div class="tiny-slide"><img src="images/shop/product/single-6.jpg" class="img-fluid rounded" alt=""></div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-7 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                    <h4 class="title">Branded T-Shirts</h4>
+                                    <h5 class="text-muted">$21.00 <del class="text-danger ms-2">$25.00</del> </h5>
+                                    <ul class="list-unstyled text-warning h5">
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                    </ul>
+                                    
+                                    <h5 class="mt-4">Overview :</h5>
+                                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem, unde molestiae sint quae inventore atque minima natus fugiat nihil quisquam voluptates ea omnis. Modi laborum soluta tempore unde accusantium.</p>
+
+                                    <div class="row mt-4 pt-2">
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="mb-0">Your Size:</h6>
+                                                <ul class="list-unstyled mb-0 ms-3">
+                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">S</a></li>
+                                                    <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">M</a></li>
+                                                    <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">L</a></li>
+                                                    <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="btn btn-icon btn-soft-primary">XL</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--end col-->
+
+                                        <div class="col-12 mt-4">
+                                            <div class="d-flex shop-list align-items-center">
+                                                <h6 class="mb-0">Quantity:</h6>
+                                                <div class="ms-3">
+                                                    <div class="qty-icons">
+                                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-icon btn-soft-primary minus">-</button>
+                                                        <input min="0" name="quantity" value="0" type="number" class="btn btn-icon btn-soft-primary qty-btn quantity">
+                                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-soft-primary plus">+</button>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+
+                                    <div class="mt-4 pt-2">
+                                        <a href="javascript:void(0)" class="btn btn-primary">Shop Now</a>
+                                        <a href="shop-cart.html" class="btn btn-soft-primary ms-2">Add to Cart</a>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product View End -->
+
+        <!-- Wishlist Popup Start -->
+        <div class="modal fade" id="wishlist" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content rounded shadow-lg border-0 overflow-hidden">
+                    <div class="modal-body py-5">
+                        <div class="text-center">
+                            <div class="icon d-flex align-items-center justify-content-center bg-soft-danger rounded-circle mx-auto" style="height: 95px; width:95px;">
+                                <h1 class="mb-0"><i class="uil uil-heart-break align-middle"></i></h1>
+                            </div>
+                            <div class="mt-4">
+                                <h4>Your wishlist is empty.</h4>
+                                <p class="text-muted">Create your first wishlist request...</p>
+                                <div class="mt-4">
+                                    <a href="javascript:void(0)" class="btn btn-outline-primary">+ Create new wishlist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wishlist Popup End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        <script src="product.js"></script>
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Slider -->
+        <script src="js/tiny-slider.js"></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        
+    </body>
+</html>
